@@ -1,0 +1,20 @@
+{
+  "name": "gamaxp-46desafiofinalgrupo7-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvdn28/GAMAXP-46DesafioFinalGrupo7-Front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvdn28/GAMAXP-46DesafioFinalGrupo7-Front/issues"
+  },
+  "homepage": "https://github.com/mvdn28/GAMAXP-46DesafioFinalGrupo7-Front#readme"
+}
