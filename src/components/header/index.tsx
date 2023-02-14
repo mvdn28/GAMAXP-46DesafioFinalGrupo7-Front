@@ -22,21 +22,43 @@ function Header() {
       
     }
 
+
+    const [isMenuInputOpen, setIsMenuInputOpen] = useState(false);
+  
+    function openMenuInput() {
+      setIsMenuInputOpen(!isMenuInputOpen);
+      
+    }
+
     
   
     return (
+
+     
+
       <main className="main">
         <header className="header">
-          <img src="logo.png" alt="" />
-          <nav className="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#products">products</a>
-            <a href="#categories">home</a>
-          </nav>
-  
+          <a href="">Logo</a>
+
+          {isMenuInputOpen && (
+               <nav className="navbar">
+               <a href="#home">home</a>
+               <a href="#features">features</a>
+               <a href="#products">products</a>
+               <a href="#categories">home</a>
+             </nav>
+               )} 
+                <nav className="navbar">
+               <a href="#home">home</a>
+               <a href="#features">Categorias</a>
+               <a href="#products">Produtos</a>
+               <a href="#categories">Sobre nos</a>
+             </nav>
+              
+          
+          
           <div className="icons">
-            <button id="menu-btn">
+            <button id="menu-btn" onClick={openMenuInput}>
               <GiHamburgerMenu />
             </button>
             <button className="cart-btn" onClick={openCartInput}>
@@ -84,7 +106,12 @@ function Header() {
              </div>
             )} 
 
-           
+
+
+
+
+
+
             
       </main>
       
