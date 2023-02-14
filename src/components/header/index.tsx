@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsSearch } from "react-icons/bs";
+import { BsCart2 } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 
 
@@ -28,7 +29,10 @@ function Header() {
             <button id="menu-btn">
               <GiHamburgerMenu />
             </button>
-            <button id="perfil">
+            <button className="cart-btn">
+                <BsCart2 />
+            </button>
+            <button id="perfil-btn">
               <IoPersonOutline />
             </button>
             <button id="search-btn" onClick={openSearchInput}>
