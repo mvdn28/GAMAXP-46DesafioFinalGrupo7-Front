@@ -12,7 +12,17 @@ function Header() {
   
     function openSearchInput() {
       setIsSearchInputOpen(!isSearchInputOpen);
+      
     }
+
+    const [isCartInputOpen, setIsCartInputOpen] = useState(false);
+  
+    function openCartInput() {
+      setIsCartInputOpen(!isCartInputOpen);
+      
+    }
+
+    
   
     return (
       <main className="main">
@@ -29,7 +39,7 @@ function Header() {
             <button id="menu-btn">
               <GiHamburgerMenu />
             </button>
-            <button className="cart-btn">
+            <button className="cart-btn" onClick={openCartInput}>
                 <BsCart2 />
             </button>
             <button id="perfil-btn">
@@ -56,6 +66,26 @@ function Header() {
                 </label>
               </form>
             )} 
+
+
+
+            {isCartInputOpen && (
+               <div className="shopping-cart">
+               <div className="Box">
+                   <i className="fas fa-trash"></i>
+                   <div className="content">
+                     <h3>Laranja</h3>
+                     <span className="price">R$5.00</span>
+                     <span className="quantity">qtd: 1</span>
+                   </div>
+               </div>
+               <div className="total">total : R$5.00</div>
+               <a href="#" className="btn">finalizar</a>
+             </div>
+            )} 
+
+           
+            
       </main>
       
     );

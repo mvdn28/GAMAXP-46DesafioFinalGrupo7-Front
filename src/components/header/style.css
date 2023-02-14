@@ -26,6 +26,23 @@
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
   }
+
+
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color: var(--orange);
+    color: #fff;
+  }
   
   header {
     position: fixed;
@@ -42,7 +59,7 @@
   }
   
   .header .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin: 0 1rem;
     color: var(--black);
   }
@@ -53,12 +70,12 @@
   
   .header .icons button {
     height: 4.5rem;
-    width: 4.5rem;
+    width: 5rem;
     line-height: 4.5rem;
     border-radius: 0.5rem;
     background: #eee;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin-right: 0.3rem;
     text-align: center;
     cursor: pointer;
@@ -81,11 +98,16 @@
     align-items: center;
     box-shadow: var(--box-shadow);
     padding: 0 1.5rem;
+    cursor: pointer;
+  }
+
+  .search-form label:hover{
+    color: var(--orange);
   }
   
   .search-form.active {
     right: 2rem;
-    transition: 0.4s;
+    transition: 0.5s ;
   }
   .search-form input {
     height: 100%;
@@ -103,3 +125,57 @@
     color: var(--black);
     cursor: pointer;
   }
+
+  #menu-btn{
+    display: none;
+    
+  }
+
+  .shopping-cart{
+    position: absolute;
+    top: 100px; right: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+  }
+
+  .shopping-cart .Box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .shopping-cart .Box .content h3{
+      color: var(--black);
+      font-size: 1.7rem;
+      padding-bottom: 1rem;
+  }
+
+  .shopping-cart .Box .content span{
+    color: var(--light-color);
+    font-size: 1.6rem;
+  }
+
+
+  .shopping-cart .Box .content .quantity{
+    padding-left: 1rem;
+  }
+
+  .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+  }
+
+
+  .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+  }
+
